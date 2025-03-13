@@ -18,14 +18,14 @@ export const Navbar = async () => {
               <Link href="/startup/create">
                 <span>Create</span>
               </Link>
-              <button
-                onClick={async () => {
+              <form
+                action={async () => {
                   "use server";
-                  await signOut();
+                  await signOut({ redirectTo: '/' });
                 }}
               >
-                Signout
-              </button>
+                <button type="submit">Signout</button>
+              </form>
               <Link href={`/user/${session.user.id}`}>
                 <span>{session?.user?.name}</span>
               </Link>

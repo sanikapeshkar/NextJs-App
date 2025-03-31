@@ -3,6 +3,8 @@ import { Geist, Geist_Mono, Work_Sans } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar/Navbar";
 
+import "easymde/dist/easymde.min.css";
+
 import localFont from "next/font/local";
 const geistSans = Geist({
   variable: "--font-geist-sans",

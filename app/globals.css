@@ -58,6 +58,10 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
 @layer utilities {
@@ -270,13 +274,3 @@
   padding: 10px !important;
 }
 
-
-
-@layer base {
-  * {
-    @apply border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
